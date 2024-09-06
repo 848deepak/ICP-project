@@ -1,17 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+    <style>
+      /* General Reset */
+      body, h1, h2, h3, p, ul {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
-</head>
+      /* Layout */
+      body {
+        display: flex;
+        background-color: #f7f7f7;
+        margin: 20px;
+      }
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+      #main {
+        width: 70%;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      }
 
+      #sidebar {
+        width: 30%;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      aside h1, section h2 {
+        font-size: 1.5rem;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+
+      /* Title Section */
+      #title h1 {
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #777;
+      }
+
+      /* Objective */
+      .main-block p {
+        font-size: 1rem;
+        color: #444;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+
+      .main-block h2 i {
+        margin-right: 8px;
+      }
+
+      /* Date, Decorator and Details */
+      .blocks {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .date {
+        font-weight: bold;
+        color: #777;
+        width: 20%;
+        font-size: 0.9rem;
+      }
+
+      .decorator {
+        width: 5%;
+        border-left: 2px solid #333;
+        margin-right: 10px;
+      }
+
+      .details {
+        width: 75%;
+      }
+
+      .details h3 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+
+      .details .place {
+        font-weight: bold;
+        color: #444;
+      }
+
+      .details .location {
+        font-size: 0.9rem;
+        color: #888;
+      }
+
+      .details ul {
+        list-style: disc;
+        padding-left: 15px;
+        color: #555;
+      }
+
+      .details ul li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+      }
+
+      /* Sidebar Styles */
+      .side-block {
+        margin-bottom: 30px;
+      }
+
+      .side-block h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .side-block ul {
+        list-style: none;
+        padding-left: 0;
+        line-height: 1.6;
+      }
+
+      .side-block ul li {
+        color: #555;
+        font-size: 0.95rem;
+      }
+
+      .side-block ul li i {
+        margin-right: 8px;
+      }
+
+      /* Skills */
+      #skills ul li {
+        margin-bottom: 10px;
+      }
+
+      /* Disclaimer */
+      #disclaimer {
+        font-size: 0.8rem;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <header id="title">
+        <h1>Deepak</h1>
+        <span class="subtitle">Computer Science Engineering Student</span>
+      </header>
+
+      <!-- Objective Section -->
+      <section class="main-block">
+        <h2>
+          <i class="fa fa-bullseye"></i> Objective
+        </h2>
+        <p>
+          A passionate and motivated second-year Computer Science Engineering student with hands-on experience in AI, ML, and software development. Eager to leverage my knowledge in problem-solving, coding, and innovation to contribute to impactful projects and advance my career in technology.
+        </p>
+      </section>
+
+      <section class="main-block">
+        <h2>
+          <i class="fa fa-suitcase"></i> Experiences
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>2023</span><span>Present</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Workshop Resource Person</h3>
+              <span class="place">Chandigarh University</span>
+              <span class="location">(remote and in-person)</span>
+            </header>
+            <div>
+              <ul>
+                <li>Led workshops on AI, ML, and Deep Learning for fellow students at Chandigarh University.</li>
+                <li>Provided hands-on training and mentorship on cutting-edge technologies.</li>
+                <li>Received certificates of appreciation as a resource person for conducting successful workshops.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2023</span><span>Present</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Student Community Group Leader</h3>
+              <span class="place">Chandigarh University</span>
+              <span class="location">(remote and in-person)</span>
+            </header>
+            <div>
+              <ul>
+                <li>Founded and led a student tech community to foster collaboration and learning.</li>
+                <li>Organized events and workshops focused on AI/ML, software development, and innovation.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2022</span><span>Present</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Private Tutor</h3>
+              <span class="place">Self-employed</span>
+              <span class="location">(remote)</span>
+            </header>
+            <div>
+              <ul>
+                <li>Tutored students in programming languages such as C++, Java, and Python.</li>
+                <li>Helped students build problem-solving skills and prepare for coding challenges.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="main-block">
+        <h2>
+          <i class="fa fa-folder-open"></i> Selected Projects
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>2024</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Guess the Number Game</h3>
+              <span class="place">Personal Project</span>
+            </header>
+            <div>
+              <ul>
+                <li>Developed a simple number-guessing game using C++ to enhance logical thinking and problem-solving skills.</li>
+                <li>Utilized random number generation and loop control structures for interactive gameplay.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2024</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Student Management System</h3>
+              <span class="place">Personal Project</span>
+            </header>
+            <div>
+              <ul>
+                <li>Built a student management system in C++ to manage student records efficiently.</li>
+                <li>Implemented features like adding, updating, and deleting student details with file handling.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2023</span><span>2024</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>CU Coding Portfolio</h3>
+              <span class="place">Chandigarh University</span>
+            </header>
+            <div>
+              <ul>
+                <li>Designed a personal coding portfolio to showcase projects and technical skills.</li>
+                <li>Included detailed descriptions and code repositories for projects in C++, Java, and Python.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="main-block concise">
+        <h2>
+          <i class="fa fa-graduation-cap"></i> Education
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>2023</span><span>2027</span>
+          </div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Bachelor of Technology in Computer Science Engineering</h3>
+              <span class="place">Chandigarh University</span>
+              <span class="location">(remote and in-person)</span>
+            </header>
+            <div>Coursework in Algorithms, Data Structures, Artificial Intelligence, Machine Learning, and Software Engineering.</div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <aside id="sidebar">
+      <div class="side-block" id="contact">
+        <h1>Contact Info</h1>
+        <ul>
+          <li><i class="fa fa-globe"></i> linkedin.com/in/848deepak</li>
+          <li><i class="fa fa-github"></i> github.com/848deepak</li>
+          <li><i class="fa fa-envelope"></i> deepakpandey911494@gmail.com</li>
+        </ul>
+      </div>
+      <div class="side-block" id="skills">
+        <h1>Skills</h1>
+        <ul>
+          <li>Programming Languages: C++, Java, Python</li>
+          <li>Machine Learning, AI, Deep Learning</li>
+          <li>Algorithm Design, Problem Solving</li>
+          <li>Git, GCC, Homebrew</li>
+        </ul>
+      </div>
+      <div class="side-block" id="disclaimer">
+        This résumé was wholly typeset with HTML/CSS.
+      </div>
+    </aside>
+  </body>
 </html>
